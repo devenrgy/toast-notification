@@ -1,3 +1,9 @@
+import SuccessIcon from './assets/check-circle.svg';
+import WarningIcon from './assets/exclamation-triangle.svg';
+import ErrorIcon from './assets/times-circle.svg';
+import InfoIcon from './assets/info-circle.svg';
+import CrossIcon from './assets/cross.svg';
+
 /**
  * Notification component.
  *
@@ -8,11 +14,11 @@
  */
 export default class Notification {
 	icons = {
-		success: './check-circle.svg',
-		info: './info-circle.svg',
-		warning: './exclamation-triangle.svg',
-		error: './times-circle.svg',
-		cross: './cross.svg',
+		success: SuccessIcon,
+		info: InfoIcon,
+		warning: WarningIcon,
+		error: ErrorIcon,
+		cross: CrossIcon,
 	};
 
 	/**
