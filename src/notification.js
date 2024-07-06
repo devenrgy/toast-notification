@@ -8,11 +8,11 @@
  */
 export default class Notification {
 	icons = {
-		success: '/check-circle.svg',
-		info: '/info-circle.svg',
-		warning: '/exclamation-triangle.svg',
-		error: '/times-circle.svg',
-		cross: '/cross.svg',
+		success: './check-circle.svg',
+		info: './info-circle.svg',
+		warning: './exclamation-triangle.svg',
+		error: './times-circle.svg',
+		cross: './cross.svg',
 	};
 
 	/**
