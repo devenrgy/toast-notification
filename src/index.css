@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	html,
+	body {
+		height: 100%;
+	}
+
+	body {
+		font-family: 'Nunito', sans-serif;
+		@apply bg-slate-300;
+	}
+}
+
+@layer utilities {
+	.notifications {
+		@apply absolute top-0 left-0 flex flex-col gap-5 z-10;
+	}
+
+	.btn {
+		@apply py-5 text-2xl font-bold text-white rounded-xl transition-colors duration-300;
+	}
+
+	@keyframes timeline {
+		from {
+			width: 100%;
+		}
+		to {
+			width: 0%;
+		}
+	}
+
+	.success {
+		@apply bg-green-500 hover:bg-green-700;
+	}
+	.info {
+		@apply bg-blue-500 hover:bg-blue-700;
+	}
+	.warning {
+		@apply bg-amber-500 hover:bg-amber-700;
+	}
+	.error {
+		@apply bg-red-500 hover:bg-red-700;
+	}
+}
